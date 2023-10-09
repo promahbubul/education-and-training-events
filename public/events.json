@@ -49,5 +49,27 @@
       "description": "Gain insights into effective financial planning and investment strategies for a secure future.",
       "price": "$75"
     }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "img": "https://i.ibb.co/gTfLRY4/portrait-young-man-while-studying-books.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "img": "https://i.ibb.co/PYT1mwN/3.png"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "img": "https://i.ibb.co/ykJWC5h/2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "img": "https://i.ibb.co/kmPJCB8/1.jpg"
+    }
   ]
 }

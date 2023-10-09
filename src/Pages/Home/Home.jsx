@@ -3,9 +3,10 @@ import Header from "../../components/Header/Header";
 import Services from "../../components/Services/Services";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { useLoaderData } from "react-router-dom";
+import Team from "../../components/Team/Team";
 
 const Home = () => {
-  const { events } = useLoaderData();
+  const { events, team } = useLoaderData();
 
   return (
     <div>
@@ -18,6 +19,16 @@ const Home = () => {
           {events?.map((event) => (
             <Services key={event.id} event={event}></Services>
           ))}
+        </div>
+        <div className="my-10 bg-slate-300 py-10 ">
+          <div
+            className="flex max-w-6xl justify-between
+         mx-auto  gap-5"
+          >
+            {team.map((person) => (
+              <Team person={person}></Team>
+            ))}
+          </div>
         </div>
       </div>
     </div>
