@@ -8,7 +8,7 @@ const Profile = () => {
   console.log(user?.displayName, user?.email, user?.photoURL, user?.uid);
   return (
     <div>
-      <div className="max-w-lg  mt-20 mx-auto text-center">
+      <div className="max-w-lg min-h-screen m-auto  mt-20 text-center">
         {user.photoURL ? (
           <img
             className="text-center
