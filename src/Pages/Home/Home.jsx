@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="my-10 bg-slate-300 py-10 ">
           <div
-            className="flex max-w-6xl justify-between
+            className="grid md:grid-cols-4 grid-cols-2 max-w-6xl justify-between
          mx-auto  gap-5"
           >
             {team.map((person) => (
