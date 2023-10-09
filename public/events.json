@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Workshop on Effective Time Management",
+      "image": "https://i.ibb.co/Z6MmJJx/header1582528860.jpg",
+      "date": "2023-11-15",
+      "description": "Learn valuable time management techniques and strategies to boost your productivity and achieve your goals.",
+      "price": "$50"
+    },
+    {
+      "id": 2,
+      "title": "Webinar on Digital Marketing Trends",
+
+      "image": "https://i.ibb.co/f96K2Yb/career-fare-it-profactionals.jpg",
+      "date": "2023-12-03",
+      "description": "Stay updated on the latest digital marketing trends and best practices with industry experts.",
+      "price": "Free"
+    },
+    {
+      "id": 3,
+      "title": "Career Fair for IT Professionals",
+      "image": "https://i.ibb.co/f96K2Yb/career-fare-it-profactionals.jpg",
+      "date": "2024-02-10",
+      "description": "Connect with top IT companies and explore job opportunities in the technology sector.",
+      "price": "Free"
+    },
+    {
+      "id": 4,
+      "title": "Educational Conference on Artificial Intelligence",
+      "image": "https://i.ibb.co/XsZw5v6/Educational-Conference-on-Artificial-Intelligence.jpg",
+      "date": "2024-03-20",
+      "description": "Join leading AI researchers and practitioners to delve into the world of artificial intelligence.",
+      "price": "$100"
+    },
+    {
+      "id": 5,
+      "title": "Training Program in Project Management",
+      "image": "https://i.ibb.co/bR9hTrS/group-presentation-circle.jpg",
+      "date": "2024-04-05",
+      "description": "Enhance your project management skills through hands-on training and workshops.",
+      "price": "$300"
+    },
+    {
+      "id": 6,
+      "title": "Seminar on Financial Planning and Investment",
+      "image": "https://i.ibb.co/JQNmBd9/Seminar-on-Financial-Planning-and-Investment.jpg",
+      "date": "2024-05-15",
+      "description": "Gain insights into effective financial planning and investment strategies for a secure future.",
+      "price": "$75"
+    }
+  ]
+}
