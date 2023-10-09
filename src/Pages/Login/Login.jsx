@@ -8,7 +8,7 @@ const Login = () => {
 
   const location = useLocation();
   const navigate = useNavigate();
-  console.log("location in the login page", location);
+  
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,7 +19,6 @@ const Login = () => {
     // user login
     loginUser(email, password)
       .then((result) => {
-        console.log(result.user);
         // navigate after login
         navigate(location?.state ? location.state : "/");
       })
@@ -28,7 +27,9 @@ const Login = () => {
 
   const handleGoogleLogin = () => {
     loginGoogle()
-      .then((result) => console.log(result.user))
+      .then((result) => {
+        navigate(location?.state ? location.state : "/");
+      })
       .catch((error) => console.error(error));
   };
   return (
@@ -87,7 +88,7 @@ const Login = () => {
           <div className="">
             <button
               onClick={handleGoogleLogin}
-              className="flex cursor-pointer bg-gray-200 text-xl mt-4 textce mx-auto px-5 py-3 rounded-sm items-center gap-2"
+              className="flex cursor-pointer   mx-auto bg-gray-200 text-xl  mb-4   px-5 py-3 rounded-sm items-center "
             >
               <FcGoogle></FcGoogle> Google
             </button>

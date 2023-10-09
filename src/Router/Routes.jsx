@@ -6,6 +6,7 @@ import Registragion from "../Pages/Registration/Registragion";
 import Error from "../Pages/Error/Error";
 import Service from "../Pages/Service/Service";
 import PrivetRoute from "./PrivetRoute";
+import Profile from "../Pages/Profile/Profile";
 
 const createRoutes = createBrowserRouter([
   {
@@ -25,6 +26,14 @@ const createRoutes = createBrowserRouter([
       {
         path: "/register",
         element: <Registragion></Registragion>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivetRoute>
+            <Profile></Profile>
+          </PrivetRoute>
+        ),
       },
       {
         path: "*",

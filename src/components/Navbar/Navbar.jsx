@@ -7,6 +7,7 @@ import logoImage from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  console.log(user);
   const links = (
     <>
       <li>
@@ -17,6 +18,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/contact"> Contact</NavLink>
+      </li>
+      <li>
+        <NavLink to="/profile"> Profile</NavLink>
       </li>
     </>
   );
@@ -58,8 +62,13 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? (
             <>
-              <p>{user.email}</p>
-              <FaUserAlt className="text-2xl  mx-3"></FaUserAlt>
+              <p>{user.displayName ? user.displayName : user.email}</p>
+              {user.photoURL ? (
+                <img className="w-11 rounded-full mx-3" src={user?.photoURL} alt="" />
+              ) : (
+                <FaUserAlt className="text-2xl  mx-3"></FaUserAlt>
+              )}
+
               <button onClick={logOut} className="bg-slate-800 px-8 py-3">
                 Sign Out
               </button>
@@ -68,9 +77,6 @@ const Navbar = () => {
             <>
               <NavLink className="mx-5 px-4 py-3" to="/login">
                 Login
-              </NavLink>
-              <NavLink className="m-1 px-4 py-3" to="/register">
-                Register
               </NavLink>
             </>
           )}

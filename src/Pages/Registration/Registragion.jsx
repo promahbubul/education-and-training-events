@@ -11,7 +11,7 @@ const Registragion = () => {
     const name = form.get("name");
     const email = form.get("email");
     const password = form.get("password");
-    console.log(name, email, password);
+   
 
     // create user
     createUser(email, password)
