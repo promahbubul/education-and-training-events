@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, loginGoogle } = useContext(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,6 +23,12 @@ const Login = () => {
         // navigate after login
         navigate(location?.state ? location.state : "/");
       })
+      .catch((error) => console.error(error));
+  };
+
+  const handleGoogleLogin = () => {
+    loginGoogle()
+      .then((result) => console.log(result.user))
       .catch((error) => console.error(error));
   };
   return (
@@ -77,6 +84,14 @@ const Login = () => {
               </p>
             </div>
           </form>
+          <div className="">
+            <button
+              onClick={handleGoogleLogin}
+              className="flex cursor-pointer bg-gray-200 text-xl mt-4 textce mx-auto px-5 py-3 rounded-sm items-center gap-2"
+            >
+              <FcGoogle></FcGoogle> Google
+            </button>
+          </div>
         </div>
       </div>
     </div>
